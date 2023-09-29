@@ -20,12 +20,15 @@ from .views import (
     saludo,
     show_name,
     test_template,
+    test_loader,
+    pisina,
 )
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
-    path('show_name/', show_name),
+    path('show_name/<name>/', show_name),
     path('template/', test_template),
-    
+    path('loader/', test_loader),
+    path('pisina/<name>/<number>/', pisina)
 ]

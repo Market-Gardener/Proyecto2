@@ -7,6 +7,15 @@
     <title>Document</title>
 </head>
 <body>
-    Probando... 1 2 3...
+    <p style="color: darkcyan"> Bienvenido {{name}}, TEXTO DE EJEMPLO</p>
+    <p style="color: cadetblue"> Mira que el color de este texto no es el mismo del de arriba</p>
+    <h2>Notas</h2>
+    {% for n in grade %}
+        {% if n <= 4 %}
+            <p style="color: red">Reprobrado: {{n}}</p>
+        {% else %}
+            <p style="color: green">Aprobado: {{n}}</p>
+        {% endif %}
+    {% endfor %}
 </body>
 </html>
