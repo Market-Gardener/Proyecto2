@@ -2,13 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def inicio(request):
-    return HttpResponse("Vista Inicio")
+    return render(request, "AppIsaac/index.html")
 
 def pisina(request):
-    return HttpResponse("Vista Pisina")
+    return render(request, "AppIsaac/pisinas.html")
 
 def items(request):
-    return HttpResponse("Vista Items")
+    return render(request, "AppIsaac/items.html")
 
 def users(request):
-    return HttpResponse("Vista Users")    
+    return render(request, "AppIsaac/users.html")
