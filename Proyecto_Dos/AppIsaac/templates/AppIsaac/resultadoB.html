@@ -1,0 +1,12 @@
+<p>Estamos buscando pisinas al precio de: {{price}}</p>
+
+{% if pisinas %}
+
+<ul>
+{% for pisinas in pisinas %}
+    <li> {{pisinas.name}} </li>
+    <li> {{pisinas.price}} </li>
+{% endfor %} 
+</ul>
+
+{% endif %}
